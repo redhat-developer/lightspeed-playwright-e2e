@@ -14,11 +14,7 @@ export * from './utils/accessibility';
 export * from './utils/chatManagement';
 export * from './utils/devMode';
 export * from './utils/fileUpload';
-export {
-  bootstrapLightspeedE2ePage,
-  LIGHTSPEED_E2E_DEFAULT_BOT_QUERY,
-  type LightspeedE2eBootstrap,
-} from './utils/lightspeedE2eSetup';
+export * from './utils/lightspeedE2eSetup';
 export * from './utils/localeSkip';
 export * from './utils/sidebar';
 export * from './utils/testHelper';
