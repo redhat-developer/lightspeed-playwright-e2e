@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Reusable Playwright helpers, page objects, and mocks for Red Hat Developer Hub Lightspeed.",
   "license": "Apache-2.0",
+  "homepage": "https://github.com/redhat-developer/lightspeed-playwright-e2e#readme",
+  "bugs": {
+    "url": "https://github.com/redhat-developer/lightspeed-playwright-e2e/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/redhat-developer/lightspeed-playwright-e2e.git"

@@ -4,17 +4,20 @@ Reusable **Playwright** helpers for [Lightspeed](https://github.com/redhat-devel
 
 ## Install
 
-**Published (recommended once you publish to npm):**
+**Published on npm** (after a maintainer runs `npm publish`; requires publish rights on the [`@red-hat-developer-hub`](https://www.npmjs.com/org/red-hat-developer-hub) scope):
 
 ```bash
 npm install -D @red-hat-developer-hub/lightspeed-playwright-e2e@^0.1.0 @playwright/test
 ```
 
-**Git (pin a tag or commit):**
+**From GitHub until then** — pin a **tag or commit** so installs stay reproducible (`#main` moves with every push):
 
 ```bash
-npm install -D "github:redhat-developer/lightspeed-playwright-e2e#main"
+npm install -D "github:redhat-developer/lightspeed-playwright-e2e#v0.1.0"
+# or: github:redhat-developer/lightspeed-playwright-e2e#<commit-sha>
 ```
+
+If no release tag exists yet, use `#main` or a full commit SHA until you tag.
 
 **Local path (monorepo / sibling clone):**
 
@@ -40,8 +43,13 @@ Your repo keeps **only** `playwright.config.ts` and `*.spec.ts` / `*.test.ts` fi
 
 ## Publish
 
-1. `git init` / push this tree to `github.com/redhat-developer/lightspeed-playwright-e2e` (or your org).
-2. Bump `version` in `package.json`, tag, `npm publish` (with npm org access to `@red-hat-developer-hub`).
+Source repo: [redhat-developer/lightspeed-playwright-e2e](https://github.com/redhat-developer/lightspeed-playwright-e2e). The `package.json` `repository.url` matches that origin.
+
+To publish **`@red-hat-developer-hub/lightspeed-playwright-e2e`** to npm you need **maintainer/publish access** to the `@red-hat-developer-hub` org on npm. Until then, depend via **`github:redhat-developer/lightspeed-playwright-e2e#<tag-or-commit>`** (see Install).
+
+1. Bump `version` in `package.json`.
+2. Tag and push, e.g. `git tag v0.1.0 && git push origin v0.1.0`.
+3. `npm publish` (while logged in as an org member with publish rights).
 
 ## Syncing from rhdh-plugins
 
