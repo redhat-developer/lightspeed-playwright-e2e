@@ -1,0 +1,36 @@
+{
+  "name": "@red-hat-developer-hub/lightspeed-playwright-e2e",
+  "version": "0.1.0",
+  "description": "Reusable Playwright helpers, page objects, and mocks for Red Hat Developer Hub Lightspeed.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redhat-developer/lightspeed-playwright-e2e.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "@playwright/test": "^1.58.0"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@backstage/core-plugin-api": "^1.12.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@types/node": "^22.0.0",
+    "typescript": "~5.8.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}
