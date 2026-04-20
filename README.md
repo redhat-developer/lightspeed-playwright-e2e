@@ -19,6 +19,8 @@ npm install -D "github:redhat-developer/lightspeed-playwright-e2e#v0.1.0"
 
 If no release tag exists yet, use `#main` or a full commit SHA until you tag.
 
+The package entrypoint is compiled **`dist/`** JavaScript (not raw `src/` TypeScript). Installing from **Git** or **npm** runs the **`prepare`** script, which builds `dist/` and copies upload fixtures. For a **`file:`** checkout, run **`npm run build`** once in this repo before your consumer resolves imports.
+
 **Local path (monorepo / sibling clone):**
 
 ```json
